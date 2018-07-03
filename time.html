@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>定时器</title>
+		<script src="lib/js/jquery-1.9.1.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="new-content">
+
+			<img class="aa" src="1522740655476786.jpg" />
+			<img class="aa" src="640.jpg" />
+			<img class="aa" src="1522740655476786.jpg" />
+			<img class="aa" src="640.jpg" />
+		</div>
+
+	</body>
+	<script type="text/javascript">
+		$(function() {
+			function Img(className) {
+				var Img = className;
+				Img.each(function() {
+					if($(this).width() > 700) {
+						$(this).css({
+							width: 100 + "%"
+						})
+					}
+				})
+			}
+			Img($(".new-content img"));
+		})
+	</script>
+
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="lib/style/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="lib/style/style.css">
+    <link rel="stylesheet" href="lib/style/mdeia.css" />
+    <script type="text/javascript" src="lib/js/jquery.min.js"></script>
+    <!--<script type="text/javascript" src="lib/js/bootstrap.min.js"></script>-->
+    <script src="lib/js/jquery.cookie.js"></script>
+    <script src="lib/js/jquery.base64.js"></script>
+    <!--<script type="text/javascript" src="lib/js/style.js"></script>-->
+    <!--<script type="text/javascript" src="lib/js/test.js"></script>-->
+    <script language="javascript" type="text/javascript">
+        // function setCookie(){ //设置cookie
+        //     var loginCode = $("#login_code").val(); //获取用户名信息
+        //     var pwd = $("#login_password").val(); //获取登陆密码信息
+        //     var checked = $("[name='checkbox']:checked");//获取“是否记住密码”复选框
+        //
+        //     if(checked){ //判断是否选中了“记住密码”复选框
+        //         $.cookie("login_code",loginCode);//调用jquery.cookie.js中的方法设置cookie中的用户名
+        //         $.cookie("pwd",$.base64.encode(pwd));//调用jquery.cookie.js中的方法设置cookie中的登陆密码，并使用base64（jquery.base64.js）进行加密
+        //     }else{
+        //         $.cookie("pwd", null);
+        //     }
+        // }
+        // function getCookie(){ //获取cookie
+        //     var loginCode = $.cookie("login_code"); //获取cookie中的用户名
+        //     var pwd =  $.cookie("pwd"); //获取cookie中的登陆密码
+        //     if(pwd){//密码存在的话把“记住用户名和密码”复选框勾选住
+        //         if(loginCode){//用户名存在的话把用户名填充到用户名文本框
+        //             $("#login_code").val(loginCode);
+        //         }
+        //         if(pwd){//密码存在的话把密码填充到密码文本框
+        //             $("#login_password").val($.base64.decode(pwd));
+        //         }
+        //         $("[name='checkbox']").attr("checked","true");
+        //     }
+        //
+        // }
+        // function login() {
+        //     // setCookie()
+        //     //判断是否选中复选框，如果选中，添加cookie
+        //     if($("[name='checkbox']").attr("checked","true")){
+        //         //添加cookie
+        //         setCookie();
+        //         // alert("记住密码登录。");
+        //         // window.location = "http://www.baidu.com";
+        //     }else{
+        //         // alert("不记密码登录。");
+        //         // window.location = "http://www.baidu.com";
+        //         return
+        //     }
+        }
+
+    </script>
+</head>
+
+<body onload="getCookie();">
+
+    <form action="" method="post">
+        <div class="form">
+
+            <div id="J_UserName" class="loginItem">
+                <label>用户名：</label>
+                <input maxlength="200" value="" name="u_username" class="log_Field" id="wsc-username">
+            </div>
+
+            <div class="loginItem" id="J_Password">
+                <label>密&nbsp;&nbsp;码：</label>
+                <input type="password" value="" maxlength="20" name="u_pwd" class="log_Field" id="wsc-password">
+            </div>
+
+            <div class="loginRemember">
+                <input type="checkbox" checked="true" name="chkRememberUsername" class="checkbox" id="rmbUser">
+                <label for="rmbUser">记住用户名</label>
+                <a href="#">忘记密码?</a>
+            </div>
+
+            <div class="loginItem loginButton" id="wait">
+                <input type="submit" value="登录" onclick="saveUserInfo()" class="button" id="log_Commit">
+            </div>
+
+        </div><!--form div-->
+    </form>
+    <footer class="sec-footer" style="background: #F0F0F0;">
+        <div class="container clearfix">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12 footer-left">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <h4>
+                            <a href="" title="">粮油油脂</a>
+                        </h4>
+                        <ul>
+
+                            <li>
+                                <a href="" title="">粮食基地</a>
+                            </li>
+
+                            <li>
+                                <a href="" title="">油脂产业</a>
+                            </li>
+
+                            <li>
+                                <a href="" title="">农业机械</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <h4>
+                            <a href="" title="">粮油油脂</a>
+                        </h4>
+                        <ul>
+
+                            <li>
+                                <a href="" title="">粮食基地</a>
+                            </li>
+
+                            <li>
+                                <a href="" title="">油脂产业</a>
+                            </li>
+
+                            <li>
+                                <a href="" title="">农业机械</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-8 col-xs-12 footer-right">
+                    <div class="col-md-6 col-sm-6 col-xs-6 footer-right-left">
+                        <em>电话:0755-1234567</em>
+                        <p>企业管理有限公司</p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6 footer-right-right">
+                        <img src="images/ewm.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="sec-footer-end">
+                <p>Copyright © 2016 112233（深圳）有限公司 版权所有 粤ICP备 05116968号.
+                    <a href="">
+                        <img src="images/end.png" alt="" title="">
+                    </a>
+                </p>
+            </div>
+
+        </div>
+    </footer>
+    <script type="text/javascript">
+
+        //初始化页面时验证是否记住了密码
+        $(document).ready(function() {
+            if ($.cookie("rmbUser") == "true") {
+                $("#rmbUser").attr("checked", true);
+                $("#wsc-username").val($.cookie("userName"));
+                $("#wsc-password").val($.cookie("passWord"));
+            }
+        });
+
+
+        function saveUserInfo() {
+            if ($("#rmbUser").attr("checked") == true) {
+                var userName = $("#wsc-username").val();
+                var passWord = $("#wsc-password").val();
+                $.cookie("rmbUser", "true", { expires: 7 }); // 存储一个带7天期限的 cookie
+                $.cookie("userName", userName, { expires: 7 }); // 存储一个带7天期限的 cookie
+                $.cookie("passWord", passWord, { expires: 7 }); // 存储一个带7天期限的 cookie
+            }
+            else {
+                $.cookie("rmbUser", "false", { expires: -1 });        // 删除 cookie
+                $.cookie("userName", '', { expires: -1 });
+                $.cookie("passWord", '', { expires: -1 });
+            }
+        }
+    </script>
+</body>
+
+</html>

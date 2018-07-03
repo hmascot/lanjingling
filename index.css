@@ -1,0 +1,458 @@
+/*首页修正版*/
+
+header {
+	height: 130px;
+}
+#demo {
+	height: 100px;
+	position: absolute;
+	width: 100px;
+	border: 0.5px solid #666666;
+	top: 50px;
+	display: none;
+	z-index: 99;
+}
+
+.demo1:hover #demo {
+	display: block;
+}
+
+#demo:after {
+	content: ' ';
+	height: 0;
+	position: absolute;
+	width: 0;
+	border: 10px solid transparent;
+	border-bottom-color: #333;
+	top: -20%;
+	left: 10px;
+}
+
+#demo img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99;
+}
+
+#content {
+	position: absolute;
+	width: 100%;
+	background: #fff;
+	padding: 90px 0 90px 0;
+	z-index: 100;
+}
+
+#content.demo {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.padding-height {
+	padding-top: 90px;
+}
+.padding_height {
+	padding-top: 130px;
+}
+
+.bg-color {
+	background: #fafafa;
+}
+.in-nav,.active-in-nav {
+	overflow: visible;
+	text-align: center;
+}
+.in-nav .in-ul, .active-in-nav .in-ul {
+	display: inline-block;
+	height: 100%;
+	font-size: 0;
+}
+.in-nav .in-ul li,.active-in-nav .in-ul li {
+	display: inline-block;
+	width: 188px;
+	height: 68px;
+	font-size: 18px;
+	/*color: #666;*/
+	text-align: center;
+	line-height: 46px;
+	cursor: pointer;
+	position: relative;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+.on {
+	background: url(images/biaoti_bg.png) no-repeat;
+    background-size: auto auto;
+	color: #fff;
+	background-size: 100% 100%;
+}
+.association {
+	height: auto;
+}
+.box_title {
+	width: 100%;
+	padding: 60px 0 40px 0;
+	text-align: center;
+}
+.box_title .title_eg {
+    font-size: 18px;
+    color: #505050;
+    margin-bottom: 14px;
+    letter-spacing: 2px;
+}
+.box_title .title_cn {
+    font-size: 20px;
+    color: #505050;
+    letter-spacing: 3px;
+}
+.association .box_1 {
+	width: 100%;
+	box-sizing: border-box;
+	padding-bottom: 23px;
+}
+.association .box_1 .box_1_1 {
+	font-size: 16px;
+	color: #909090;
+	letter-spacing: 2px;
+	line-height: 28px;
+}
+.association .box_1 .box_1_1 pre {
+	width: 100%;
+	height: auto;
+	font-size: 16px;
+	color: #888;
+	box-sizing: border-box;
+	padding: 60px 10px 60px 10px;
+	line-height: 25px;
+}
+.association .box_1 .box_1_1 img {
+	width: 100%;
+}
+.cdr .cdr_left {
+    width: 470px;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+}
+.cdr .cdr_left > img {
+    width: 100%;
+}
+.cdr .cdr_right {
+    width: 530px;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 0 0 30px;
+}
+.cdr .cdr_right .cdr_name {
+    height: 60px;
+    color: #555;
+    font-size: 18px;
+    line-height: 60px;
+}.cdr_right .cdr_block > h3 {
+    width: 100%;
+    height: 60px;
+    line-height: 80px;
+    /*color: #fff;*/
+    font-size: 28px;
+    letter-spacing: 4px;
+}
+.cdr .cdr_right .cdr_block > h4 {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.cdr .cdr_right .cdr_txt {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 30px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #666;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+.other_box {
+	padding-top: 50px;
+}
+.other_box > ul {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.other_box > ul > li .other_img {
+    width: 100%;
+    height: 260px;
+    position: relative;
+    overflow: hidden;
+}
+.other_box > ul > li {
+	padding-left: 0;
+}
+.other_box > ul > li .other_img img {
+	width: 100%;
+}
+.opacity {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+}
+.opacity:hover{
+	animation: hzhover 0.5s forwards;
+}
+.opacity .logo {
+    width: 100%;
+    height: 150px;
+    background: url(../../img/logo.png)no-repeat;
+        background-position-x: 0%;
+        background-position-y: 0%;
+    background-position: center bottom;
+}
+.opacity .name {
+    width: 100%;
+    height: 66px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 3px;
+    color: #fff;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+.other_box > ul > li .other_name {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    line-height: 40px;
+}
+.lit_box {
+	height: auto;
+}
+.lit_box .fo-dynamic {
+	padding: 10px 14px;
+	background: #093B6B;
+}
+.lit_box li span {
+	color: #fff;
+}
+.lit_box li .mores {
+	float: right;
+}
+.lit_box li .mores>a {
+	color: #fff;
+}
+.lit_box > ul {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+.lit_box > ul > li {
+	
+    height: 410px;
+    box-sizing: border-box;
+    border: 1px solid #e1e1e1;
+    background: #fff;
+   margin-bottom: 40px;
+   float: left;
+}
+.lit_box > ul > li.third {
+	float: right;
+}
+.lit_box > ul > li .lit_top {
+    width: 100%;
+    height: 216px;
+    box-sizing: border-box;
+    padding: 20px 14px 20px 14px;
+}
+.lit_box > ul > li .lit_top .top_title {
+    width: 100%;
+    height: 46px;
+    overflow: hidden;
+    font-size: 16px;
+    color: #505050;
+    letter-spacing: 2px;
+}
+.lit_box > ul > li .lit_top .top_time {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #888;
+    overflow: hidden;
+}
+.lit_box > ul > li .lit_top .top_time > .push_time {
+    display: inline-block;
+    width: auto;
+    float: left;
+}
+.lit_box > ul > li .lit_top .top_time > .look_num {
+    display: inline-block;
+    width: auto;
+    float: right;
+}
+.lit_box > ul > li .lit_top .top_txt {
+    width: 100%;
+    height: 60px;
+    color: #999;
+    font-size: 14px;
+    overflow: hidden;
+    margin-bottom: 7px;
+}
+.lit_box > ul > li .lit_top .top_btn {
+    width: 100%;
+    height: 26px;
+}
+.lit_box > ul > li .lit_top .top_btn > b {
+    display: inline-block;
+    width: 90px;
+    height: 26px;
+    border-radius: 15px;
+    font-size: 14px;
+    border: 1px solid #997c34;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 26px;
+    color: #997c34;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    background: #fff;
+    overflow: hidden;
+}
+.lit_box > ul > li .lit_bot {
+    width: 100%;
+    height: 194px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.lit_box > ul > li .lit_bot > img {
+    width: 100%;
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+}
+
+.box_bot .ass_img {
+    margin-bottom: 26px;
+}
+
+.box_bot .ass_txt {
+    font-size: 16px;
+    color: #666;
+    line-height: 22px;
+    word-spacing: 4px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+.box_bot .ass_btn {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.box_bot .ass_btn .see_more {
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 6px;
+    border: 1px solid #e1e1e1;
+    background: #997c34;
+    cursor: pointer;
+    letter-spacing: 3px;
+}
+.xiehui img{
+	width: 100%;
+}
+@media only screen and (max-width:970px ) {
+	.box_bot .ass_img img {
+		width: 100%;
+	}
+	.other_box > ul > li .other_img {
+		height: auto;
+	}
+	.other_box > ul > li {
+		padding-left: 15px;
+	    margin-bottom: 10%;
+	}
+}
+
+@media only screen and (min-width:769px ){
+	.lit_box > ul > li {
+		width: 290px;
+	}
+	.lit_box > ul > li.second {
+	    margin-left: 4%;
+	}
+}
+@media only screen and (min-width:1200px ) {
+	.lit_box > ul > li {
+		width: 330px;
+	}
+	.lit_box > ul > li.second {
+		margin-left: 7%;
+	}
+}
+@media only screen and (max-width:990px ) {
+	.lit_box > ul > li {
+	    width: 230px;
+	}
+	.lit_box > ul > li.second {
+	    margin-left: 2%;
+	}
+}
+@media only screen and (max-width:768px ) {
+	.lit_box > ul > li {
+	    width: 231px;
+	}
+	.lit_box > ul > li.second {
+	    margin-left: 2%;
+	}
+}
+@media only screen and (max-width:480px ) {
+	header {
+		height: auto;
+	}
+	#content.demo,#association-box {
+		padding-top: 90px;
+	}
+	.association-box img {
+		width: 100%;
+	}
+	.cdr .cdr_right {
+		width: auto;
+	}
+	.cdr .cdr_left {
+		width: auto;
+	}
+	.lit_box > ul > li {
+		width: 100%;
+	}
+	.lit_box > ul > li.second {
+	    margin-left: 0;
+	}
+	.in-nav .in-ul li, .active-in-nav .in-ul li{
+		width: 120px;
+	}
+}
+
+@keyframes hzhover {
+	from{
+		opacity: 0;
+	}to{
+			 opacity:1;
+		 }
+}

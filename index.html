@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="lib/style/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="lib/style/style.css">
+    <link rel="stylesheet" href="lib/style/mdeia.css" />
+    <script type="text/javascript" src="lib/js/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
+    <!--<script type="text/javascript" src="lib/js/hammer.js"></script>-->
+    <!--<script type="text/javascript" src="lib/js/jq-hammer.js"></script>-->
+    <script type="text/javascript" src="lib/js/style.js"></script>
+    <style>
+    #demo {
+            height: 100px;
+            position: absolute;
+            width: 100px;
+            border:0.5px solid #666666;
+            top: 50px;
+            display: none;
+            z-index: 99;
+        }
+        .demo1:hover #demo {
+            display: block;
+        }
+
+        #demo:after {
+            content: ' ';
+            height: 0;
+            position: absolute;
+            width: 0;
+
+            border: 10px solid transparent;
+            /* border-top-color: #333; */
+            border-bottom-color: #333;
+
+            top: -20%;
+            left: 10px;
+        }
+        #demo img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 99;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navTop">
+            <div class="topNav">
+                <div class="container clearfix">
+                    <p class="wechat">
+                        <em>wechat</em>
+                    </p>
+                    <ul class="pull-left">
+                        <li class="pull-left demo1">
+                            <a style="position:relative;" href="javascript:void (0)">微信</a>
+                            <span>|</span>
+                            <div id="demo">
+                                <img src="images/ewm.png">
+                            </div>
+                        </li>
+                        <li class="pull-left demo1">
+                            <a href="javascript:void (0)">微博</a>
+                            <span>|</span>
+                            <div id="demo">
+                                    <img src="images/ewm.png">
+                                </div>
+                        </li>
+                        <li class="pull-left">
+                            <a href="javascript:void (0)">掘金</a>
+                            <span>|</span>
+                        </li>
+                        <li class="pull-left">
+                            <a href="javascript:void (0)">知乎</a>
+                            <span>|</span>
+                        </li>
+                        <li class="pull-left">
+                            <a href="javascript:void (0)">QQ</a>
+                            <span class="last-bar">|</span>
+                        </li>
+                    </ul>
+                    <ul class="pull-right">
+                        <li class="pull-left">
+                            <a href="login.html">登录</a>
+                            <span>|</span>
+                        </li>
+                        <li class="pull-left">
+                            <a href="Individual-initiation.html">个人入会</a>
+                            <span>|</span>
+                        </li>
+                        <li class="pull-left">
+                            <a href="group.html">团体入会</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="subTop">
+                <div class="container clearfix">
+                    <a href="index.html" class="pull-left subImg" title="">
+                        <img src="images/logo.png" alt="" />
+                    </a>
+                    <div class="navbar-collapse collapse" role="navigation" aria-expanded="false" style="height: 1px;border-color: #101010;">
+                        <ul class="pull-right pull-sub-right nav navbar-nav">
+                            <li>
+                                <a href="">首页</a>
+                            </li>
+                            <li>
+                                <a href="">集团概况</a>
+                            </li>
+                            <li>
+                                <a href="">资讯动态</a>
+                            </li>
+                            <li>
+                                <a href="">业务概览</a>
+                            </li>
+                            <li>
+                                <a href="">人力资源</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <!--<div class="clearfix"></div>-->
+    </header>
+    <section class="clearfix">
+        <div class="sec-banner">
+            <div class="container clearfix">
+                <div id="carousel-example-generic" class="carousel slide slick-slide carousel-fade" data-interval="2000" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <a href="#" title="">
+                                <img src="images/thumb.jpg" alt="thumb">
+                            </a>
+
+                        </div>
+                        <div class="item">
+                            <a href="#" title="">
+                                <img src="images/thumb (1).jpg" alt="thumb">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control slick-arrow slick-prev" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="carousel-prev" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control slick-arrow slick-next" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="carousel-next" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--<script>-->
+            <!--$(function () {-->
+                <!--$('#carousel-example-generic').hammer().on('swipeleft', function () {-->
+                    <!--$(this).carousel('next');-->
+                <!--});-->
+
+                <!--$('#carousel-example-generic').hammer().on('swiperight', function () {-->
+                    <!--$(this).carousel('prev');-->
+                <!--});-->
+            <!--})-->
+        <!--</script>-->
+        <!--通知公告-->
+        <div class="sec-notice clearfix">
+            <div class="container">
+                <div class="repeat clearfix">
+                    <span class="col-md-2 col-xs-4 col-sm-3 notice-title">通知公告：</span>
+                    <span class="col-md-10 col-xs-8 col-sm-9 notice-content">
+                        <ul id="scroll">
+                            <li>
+                                <a href="#">1中国茶叶蝴蝶品牌荣获“2016年中国茉莉花茶十大品牌”称号
+                                    <span class="pull-right">2017-10-26</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">2蝶品牌荣获“2016年中国茉莉花茶十大品牌”称号
+                                    <span class="pull-right">2017-10-26</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">3中国茶叶蝴蝶品牌荣获国茉莉花茶十大品牌”称号
+                                    <span class="pull-right">2017-10-26</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+        <!--集团动态，行业新闻-->
+        <div class="sec-news">
+            <div class="container clearfix">
+                <ul class="row">
+                    <li class="col-md-4 col-sm-12 sec-none" style="padding-right: 0;">
+                        <div id="carousel-example" class="carousel slide carousel-fade" data-interval="2000" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators carousel-index">
+                                <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example" data-slide-to="1"></li>
+                                <li data-target="#carousel-example" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <a href="#">
+                                        <img src="images/sec-news.jpg" alt="sec-news">
+                                        <div class="carousel-caption item-title">
+                                            <h3>集团召开2017年瘦身健体提质增效专题工作会你好你好你好你好你好你好你好你好你好你好你好你好</h3>
+                                        </div>
+                                    </a>
+
+                                </div>
+                                <div class="item">
+                                    <a href="#" title="">
+                                        <img src="images/sec-news.jpg" alt="sec-news">
+                                        <div class="carousel-caption item-title">
+                                            <h3>环保部：14省市将在今年底前完成生态红线划定</h3>
+                                        </div>
+                                    </a>
+
+                                </div>
+                                <div class="item">
+                                    <a href="#" title="">
+                                        <img src="images/sec-news.jpg" alt="sec-news">
+                                        <div class="carousel-caption item-title">
+                                            <h3>蝶品牌荣获“2016年中国茉莉花茶十大品牌”称号s</h3>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-md-4 col-sm-12 sec-dy" style="padding-left: 0;">
+                        <ul class="sec-dynamics clearfix">
+                            <h2>集团动态</h2>
+                            <a href="new-list.html" title="" class="more">
+                                更多
+                                <i>&gt;</i>
+                            </a>
+                            <li>
+                                <a class="sec-ellipsis" href="news.html" title="">福临门大米连续八年荣列大米类市场综合占有率第一位
+                                    <span>[09-07]</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sec-ellipsis" href="" title="">长城葡萄酒香溢“一带一路”高峰论坛
+                                    <span>[09-07]</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sec-ellipsis" href="" title="">中国茶叶香飘“一带一路”高峰论坛
+                                    <span>[09-07]</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sec-ellipsis" href="" title="">中国粮油股东特别大会通过对福临门营销公司100%股权的收购
+                                    <span>[09-07]</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="col-md-4 col-sm-12">
+                        <ul class="sec-dynamics clearfix">
+                            <h2>行业新闻</h2>
+                            <a href="#" title="" class="more">
+                                更多
+                                <i>&gt;</i>
+                            </a>
+                            <li>
+                                <a class="sec-ellipsis" href="" title="">江西米业蒸谷米新品中粮“米厨花式食米”成功上市
+                                    <span>[09-07]</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sec-ellipsis" href="" title="">中国茶叶蝴蝶品牌荣获“2016年中国茉莉花茶十大品牌”称号
+                                    <span>[09-07]</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sec-ellipsis" href="" title="">营养健康研究院获批承担国家重点研发计划项目
+                                    <span>[09-07]</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sec-ellipsis" href="" title="">我集团与永联集团、嘉兴博宏建设工程咨询公司签署三方战略合作协议
+                                    <span>[09-07]</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="sec-video">
+        <div class="container clearfix">
+            <div class="row">
+                <ul class="fix clearfix">
+                    <li class="col-md-8 clearfix">
+                        <div class="hl_main5_content sec-dynamics">
+                            <h2>业务概览</h2>
+                            <a href="#" title="" class="more">
+                                更多
+                                <i>&gt;</i>
+                            </a>
+                            <div class="hl_scrool_leftbtn">
+                                <i class="fa fa-angle-left"></i>
+                            </div>
+                            <div class="hl_scrool_rightbtn">
+                                <i class="fa fa-angle-right"></i>
+                            </div>
+                            <div class="hl_main5_content1">
+                                <ul class="clearfix ">
+                                    <li>
+                                        <a href="" title="">
+                                            <img src="images/101038424.png" />
+                                        </a>
+                                        <h4>
+                                            <a>东北小麦产业基地东北小麦产业基地东北小麦产业基地</a>
+                                        </h4>
+                                    </li>
+                                    <li>
+                                        <a href="" title="">
+                                            <img src="images/1510108806.png" />
+                                        </a>
+                                        <h4>
+                                            <a>东北小麦产业基地</a>
+                                        </h4>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-md-4 col-sm-12 sec-vedios">
+                        <div class="sec-video-over">
+                            <h2>企业风采</h2>
+                            <div class="sec-videos" style="background: url(images/1500972202.jpg); background-size: cover; background-repeat:no-repeat;">
+                                <a href="#">
+                                    <h4>欢迎来到</h4>
+                                </a>
+
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </section>
+    <section class="services">
+        <!--新增-->
+        <div class="container clearfix">
+            <div class="row">
+                <ul class="clearfix">
+                    <li class="col-md-8 col-sm-12 col-xs-12">
+                        <div class="service-sector">
+                            <h2>服务专区</h2>
+                            <a href="javascript:void (0)" class="more">更多<i>></i></a>
+                            <div class="service-info col-md-6 col-sm-6 col-xs-12">
+                                <div class="service-infobox service-infoboxL">
+                                    <a href="javascript:void (0)" title="好看的">
+                                        <img src="images/thumb.jpg" alt="">
+                                    </a>
+                                    <div class="service-tip">
+                                        <h3>环保部：14省市将在今年底前完成生态红线划定</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-info col-md-6 col-sm-6 col-xs-12">
+                                <div class="service-infobox service-infoboxR">
+                                    <a href="javascript:void (0)" title="好吃的">
+                                        <img src="images/thumb.jpg" alt="">
+                                    </a>
+                                    <div class="service-tip">
+                                        <h3>环保部：14省市将在今年底前完成生态红线划定</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-md-4 col-sm-12 col-xs-12">
+                        <ul class="service-sector">
+                            <h2>会员动态</h2>
+                            <a href="javascript:void (0)" class="more">更多<i>></i></a>
+                            <li class="service-right-box">
+                                <a href="javascript:void (0)">
+                                    江西米业蒸谷米新品中粮“米厨花式食米”成功上市
+                                    <span>[09-07]</span>
+                                </a>
+                            </li>
+                            <li class="service-right-box">
+                                <a href="javascript:void (0)">
+                                    江西米业蒸谷米新品中粮“米厨花式食米”成功上市
+                                    <span>[09-07]</span>
+                                </a>
+                            </li>
+                            <li class="service-right-box">
+                                <a href="javascript:void (0)">
+                                    江西米业蒸谷米新品中粮“米厨花式食米”成功上市
+                                    <span>[09-07]</span>
+                                </a>
+                            </li>
+                            <li class="service-right-box">
+                                <a href="javascript:void (0)">
+                                    江西米业蒸谷米新品中粮“米厨花式食米”成功上市
+                                    <span>[09-07]</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="sec-partner clearfix" style="border: 1px solid #e7eaf1;">
+                <div class="partner-titlt">
+                    <h2>合作伙伴</h2>
+                </div>
+
+                <ul class=" row">
+                    <li class="col-md-3 col-sm-3 col-xs-6">
+                        <a href="">
+                            <img src="images/pay.jpg">
+                        </a>
+                    </li>
+                    <li class="col-md-3 col-sm-3 col-xs-6">
+                        <a href="">
+                            <img src="images/pay.jpg">
+                        </a>
+                    </li>
+                    <li class="col-md-3 col-sm-3 col-xs-6">
+                        <a href="">
+                            <img src="images/pay.jpg">
+                        </a>
+                    </li>
+                    <li class="col-md-3 col-sm-3 col-xs-6">
+                        <a href="">
+                            <img src="images/pay.jpg">
+                        </a>
+                    </li>
+                    <li class="col-md-3 col-sm-3 col-xs-6">
+                        <a href="">
+                            <img src="images/pay.jpg">
+                        </a>
+                    </li>
+                    <li class="col-md-3 col-sm-3 col-xs-6">
+                        <a href="">
+                            <img src="images/pay.jpg">
+                        </a>
+                    </li>
+                    <li class="col-md-3 col-sm-3 col-xs-6">
+                        <a href="">
+                            <img src="images/pay.jpg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div style="background:#F0F0F0;" class="index-login clearfix">
+            <ul class="row">
+                <li class="col-xs-5">
+                    <a href="login.html" style="color:#333;">
+                        <span>登录</span>
+                    </a>
+                </li>
+                <li class="col-xs-2">
+                    <span>|</span>
+                </li>
+                <li class="col-xs-5" data-toggle="modal" data-target="#layer">
+                    <span>入会</span>
+                </li>
+            </ul>
+        </div>
+        <!--模态框-->
+        <div role="dialog" class="modal fade" id="layer">
+            <div class="modal-dialog" style="margin-top:50%;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                        <h4 class="modal-title">注册会员</h4>
+                    </div>
+                    <div class="modal-body text-center">
+                        <ul class="row">
+                            <li class="col-xs-5">
+                                <a href="Individual-initiation.html">个人</a>
+                            </li>
+                            <li class="col-xs-2">
+                                <span>|</span>
+                            </li>
+                            <li class="col-xs-5">
+                                <a href="login.html">团体</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="sec-footer" style="background: #F0F0F0;">
+        <div class="container clearfix">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12 footer-left">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <h4>
+                            <a href="" title="">粮油油脂</a>
+                        </h4>
+                        <ul>
+
+                            <li>
+                                <a href="" title="">粮食基地</a>
+                            </li>
+
+                            <li>
+                                <a href="" title="">油脂产业</a>
+                            </li>
+
+                            <li>
+                                <a href="" title="">农业机械</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <h4>
+                            <a href="" title="">粮油油脂</a>
+                        </h4>
+                        <ul>
+
+                            <li>
+                                <a href="" title="">粮食基地</a>
+                            </li>
+
+                            <li>
+                                <a href="" title="">油脂产业</a>
+                            </li>
+
+                            <li>
+                                <a href="" title="">农业机械</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-8 col-xs-12 footer-right">
+                    <div class="col-md-6 col-sm-6 col-xs-6 footer-right-left">
+                        <em>电话:0755-1234567</em>
+                        <p>企业管理有限公司</p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6 footer-right-right">
+                        <img src="images/ewm.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="sec-footer-end">
+                <p>Copyright © 2016 112233（深圳）有限公司 版权所有 粤ICP备 05116968号.
+                    <a href="">
+                        <img src="images/end.png" alt="" title="">
+                    </a>
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

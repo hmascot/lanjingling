@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+		<title>Title</title>
+		<link rel="stylesheet" type="text/css" href="lib/style/bootstrap.min.css">
+		<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="lib/style/style.css">
+        <link rel="stylesheet" href="lib/style/mdeia.css" />
+        <link rel="stylesheet" type="text/css" href="index.css"/>
+		<script type="text/javascript" src="lib/js/jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="lib/js/style.js"></script>
+        <script src="lib/js/hammer.js"></script>
+        <script src="lib/js/jq-hammer.js"></script>
+		<script src="jqure-mousewheel.js" type="text/javascript" charset="utf-8"></script>
+		<script src="index.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<header class="clearfix">
+			<div class="navTop">
+				<div class="topNav">
+					<div class="container clearfix">
+						<p class="wechat">
+							<em>wechat</em>
+						</p>
+						<ul class="pull-left">
+							<li class="pull-left demo1">
+								<a style="position:relative;" href="javascript:void (0)">微信</a>
+								<span>|</span>
+								<div id="demo">
+									<img src="images/ewm.png">
+								</div>
+							</li>
+							<li class="pull-left demo1">
+								<a href="javascript:void (0)">微博</a>
+								<span>|</span>
+								<div id="demo">
+									<img src="images/ewm.png">
+								</div>
+							</li>
+							<li class="pull-left">
+								<a href="javascript:void (0)">掘金</a>
+								<span>|</span>
+							</li>
+							<li class="pull-left">
+								<a href="javascript:void (0)">知乎</a>
+								<span>|</span>
+							</li>
+							<li class="pull-left">
+								<a href="javascript:void (0)">QQ</a>
+								<span class="last-bar">|</span>
+							</li>
+						</ul>
+						<ul class="pull-right">
+							<li class="pull-left">
+								<a href="login.html">登录</a>
+								<span>|</span>
+							</li>
+							<li class="pull-left">
+								<a href="Individual-initiation.html">个人入会</a>
+								<span>|</span>
+							</li>
+							<li class="pull-left">
+								<a href="group.html">团体入会</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="subTop">
+					<div class="container clearfix">
+						<a href="index.html" class="pull-left subImg" title="">
+							<img src="images/logo.png" alt="" />
+							<!--<img src="http://www.cnfopa.com/static/images/mlogo.png" alt="" />-->
+						</a>
+						<div class="navbar-collapse collapse at" role="navigation" aria-expanded="false" style="border-color: #101010;">
+							<ul class="pull-right pull-sub-right nav navbar-nav maodian">
+								<li>
+									<!--<a href="#banner-box">首页</a>-->
+									<a href="/">首页</a>
+								</li>
+								<li>
+									<a href="#association-box">协会介绍</a>
+								</li>
+								<li>
+									<a href="#news-information">新闻动态</a>
+								</li>
+								<li>
+									<a href="#activess">活动专区</a>
+								</li>
+								<li>
+									<a href="#service-sector">服务专区</a>
+								</li>
+								<li>
+									<a href="#office">办事处</a>
+								</li>
+								<li>
+									<a href="">关于我们</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button id="btn" class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+			<!--<div class="clearfix"></div>-->
+		</header>
+		<!--<div style="height: 39px;"></div>-->
+		<div id="content" class="demo clearfix">
+			<section id="banner-box">
+				<div class="sec-banner">
+					<div class="container clearfix">
+						<div id="carousel-example-generic" class="carousel slide slick-slide carousel-fade" data-interval="2000" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+							</ol>
+
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<a href="#" title="">
+										<img src="images/thumb.jpg" alt="thumb">
+									</a>
+
+								</div>
+								<div class="item">
+									<a href="#" title="">
+										<img src="images/thumb (1).jpg" alt="thumb">
+									</a>
+								</div>
+							</div>
+
+							<!-- Controls -->
+							<a class="left carousel-control slick-arrow slick-prev" href="#carousel-example-generic" role="button" data-slide="prev">
+								<span class="carousel-prev" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control slick-arrow slick-next" href="#carousel-example-generic" role="button" data-slide="next">
+								<span class="carousel-next" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="association-box">
+				<div class="container clearfix">
+
+					<div class="association">
+						<div class="association_box">
+							<div class="in_box">
+								<div class="box_title">
+									<p class="title_eg">Association</p>
+									<p class="title_cn">协会介绍</p>
+								</div>
+								<!--<div class="box_1">
+                        <div class="box_1_1">
+                           	香港家族办公室协会(Association of Family Offices in Hong Kong)，于2014年6月20日在香港注册登记，面向两岸三地发展会员，是一家链接境内外家族财富管理及研究机构、家族办公室从业人员、家族办公室业务相关服务机构、资深专家学者的行业性社会团体。香港家族办公室协会会员类型分为专业会员和普通会员；专业会员包括家族办公室机构、家族办公室研究机构及家族办公室服务领域资深人士。单一家族办公室会员指为一个家族提供服务的家族办公室机构或个人；联合家族办公室会员指为多个家族提供服务的家族办公室机构或个人；普通会员包括金融类家族服务机构或个人、非金融类家族服务机构或个人、教育培训类机构会员或个人。团体类机构会员包括关联行业协会、学术团体等。
+                        </div>
+                    </div>-->
+								<div class="box_bot">
+									<div class="ass_img">
+										<ul class="clearfix" style="text-align: center;">
+											<li class="col-md-3 col-sm-3 col-xs-3"><img src="img/mian1_text0.png" alt=""></li>
+											<li class="col-md-3 col-sm-3 col-xs-3"><img src="img/mian1_text0.png" alt=""></li>
+											<li class="col-md-3 col-sm-3 col-xs-3"><img src="img/mian1_text0.png" alt=""></li>
+											<li class="col-md-3 col-sm-3 col-xs-3"><img src="img/mian1_text0.png" alt=""></li>
+										</ul>
+									</div>
+									<div class="ass_txt">
+										香港家族办公室协会（Association of Family Offices in HongKong）,于2014年6年20日在香港注册登记，面向两岸三地发展会员，是一家链接境内外家族财富管理及研究机构、家族办公室从业人员、家族办公室相关服务机构、资深专家学者的行业性社会团体。
+									</div>
+									<div class="ass_btn">
+										<!--<input type="button" value="See More" title="See More">-->
+										<a class="see_more" href="">See More</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+			</section>
+			<section id="news-information">
+				<div class="bg-color">
+					<div class="container clearfix">
+						<div class="box_title">
+							<p class="title_eg">News Information</p>
+							<p class="title_cn">新闻动态</p>
+						</div>
+						<div class="lit_box clearfix">
+							<ul class="clearfix">
+								<li class="first">
+									<div class="fo-dynamic">
+										<span>促进会动态</span>
+										<span class="mores"><a href="">more</a></span>
+									</div>
+									<div class="lit_top">
+										<div class="top_title">
+											香港家族办公室协会会长单位蓝源资本应邀出席2016金砖论坛暨中国财富管理峰会
+										</div>
+										<div class="top_time">
+											<div class="push_time">
+												2016/11/18
+											</div>
+											<div class="look_num">
+												浏览次数：<i>36</i>
+											</div>
+										</div>
+										<div class="top_txt">中国金融、地产、财富管理领域年度盛会——2016金砖论坛暨第五届金砖价值榜颁奖典礼，武军先生就家族财...</div>
+										<div class="top_btn"><b>了解详情</b>
+
+										</div>
+									</div>
+									<div class="lit_bot"><img src="img/010101.jpg/" style="display: block;"></div>
+								</li>
+								<li class="second">
+									<div class="fo-dynamic">
+										<span>促进会动态</span>
+										<span class="mores"><a href="">more</a></span>
+									</div>
+									<div class="lit_top">
+										<div class="top_title">
+											香港家族办公室协会会长单位蓝源资本应邀出席2016金砖论坛暨中国财富管理峰会
+										</div>
+										<div class="top_time">
+											<div class="push_time">
+												2016/11/18
+											</div>
+											<div class="look_num">
+												浏览次数：<i>36</i>
+											</div>
+										</div>
+										<div class="top_txt">中国金融、地产、财富管理领域年度盛会——2016金砖论坛暨第五届金砖价值榜颁奖典礼，武军先生就家族财...</div>
+										<div class="top_btn"><b>了解详情</b>
+
+										</div>
+									</div>
+									<div class="lit_bot"><img src="img/010101.jpg/" style="display: block;"></div>
+								</li>
+								<li class="third">
+									<div class="fo-dynamic">
+										<span>促进会动态</span>
+										<span class="mores"><a href="">more</a></span>
+									</div>
+									<div class="lit_top">
+										<div class="top_title">
+											香港家族办公室协会会长单位蓝源资本应邀出席2016金砖论坛暨中国财富管理峰会
+										</div>
+										<div class="top_time">
+											<div class="push_time">
+												2016/11/18
+											</div>
+											<div class="look_num">
+												浏览次数：<i>36</i>
+											</div>
+										</div>
+										<div class="top_txt">中国金融、地产、财富管理领域年度盛会——2016金砖论坛暨第五届金砖价值榜颁奖典礼，武军先生就家族财...</div>
+										<div class="top_btn"><b>了解详情</b>
+
+										</div>
+									</div>
+									<div class="lit_bot"><img src="img/010101.jpg/" style="display: block;"></div>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="activess">
+				<div class="container clearfix">
+					<div class="box_title">
+						<p class="title_eg">Actity</p>
+						<p class="title_cn">活动专区</p>
+					</div>
+					<div class="lit_box clearfix">
+						<ul class="clearfix">
+							<li class="first">
+								<span>架构师培训</span>
+								<span class="mores"><a href="">more</a></span>
+								<div class="lit_top">
+									<div class="top_title">
+										香港家族办公室协会会长单位蓝源资本应邀出席2016金砖论坛暨中国财富管理峰会
+									</div>
+									<div class="top_time">
+										<div class="push_time">
+											2016/11/18
+										</div>
+										<div class="look_num">
+											浏览次数：<i>36</i>
+										</div>
+									</div>
+									<div class="top_txt">中国金融、地产、财富管理领域年度盛会——2016金砖论坛暨第五届金砖价值榜颁奖典礼，武军先生就家族财...</div>
+									<div class="top_btn"><b>了解详情</b>
+
+									</div>
+								</div>
+								<div class="lit_bot"><img src="img/010101.jpg/" style="display: block;"></div>
+							</li>
+							<li class="second">
+								<span>专家大讲堂</span>
+								<span class="mores"><a href="">more</a></span>
+								<div class="lit_top">
+									<div class="top_title">
+										香港家族办公室协会会长单位蓝源资本应邀出席2016金砖论坛暨中国财富管理峰会
+									</div>
+									<div class="top_time">
+										<div class="push_time">
+											2016/11/18
+										</div>
+										<div class="look_num">
+											浏览次数：<i>36</i>
+										</div>
+									</div>
+									<div class="top_txt">中国金融、地产、财富管理领域年度盛会——2016金砖论坛暨第五届金砖价值榜颁奖典礼，武军先生就家族财...</div>
+									<div class="top_btn"><b>了解详情</b>
+
+									</div>
+								</div>
+								<div class="lit_bot"><img src="img/010101.jpg/" style="display: block;"></div>
+							</li>
+							<li class="third">
+								<span>其他活动</span>
+								<span class="mores"><a href="">more</a></span>
+								<div class="lit_top">
+									<div class="top_title">
+										香港家族办公室协会会长单位蓝源资本应邀出席2016金砖论坛暨中国财富管理峰会
+									</div>
+									<div class="top_time">
+										<div class="push_time">
+											2016/11/18
+										</div>
+										<div class="look_num">
+											浏览次数：<i>36</i>
+										</div>
+									</div>
+									<div class="top_txt">中国金融、地产、财富管理领域年度盛会——2016金砖论坛暨第五届金砖价值榜颁奖典礼，武军先生就家族财...</div>
+									<div class="top_btn"><b>了解详情</b>
+
+									</div>
+								</div>
+								<div class="lit_bot"><img src="img/010101.jpg/" style="display: block;"></div>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+
+			</section>
+			<section id="service-sector">
+				<div class="bg-color">
+					<div class="container clearfix">
+						<div class="box_title">
+							<p class="title_eg">Actity</p>
+							<p class="title_cn">服务专区</p>
+						</div>
+						<div class="lit_box clearfix">
+							<ul class="clearfix">
+								<li class="first">
+
+									<div class="lit_top">
+										<div class="top_title">
+											香港家族办公室协会会长单位蓝源资本应邀出席2016金砖论坛暨中国财富管理峰会
+										</div>
+										<div class="top_time">
+											<div class="push_time">
+												2016/11/18
+											</div>
+											<div class="look_num">
+												浏览次数：<i>36</i>
+											</div>
+										</div>
+										<div class="top_txt">中国金融、地产、财富管理领域年度盛会——2016金砖论坛暨第五届金砖价值榜颁奖典礼，武军先生就家族财...</div>
+										<div class="top_btn"><b>了解详情</b>
+
+										</div>
+									</div>
+									<div class="lit_bot"><img src="img/010101.jpg/" style="display: block;"></div>
+								</li>
+								<li class="second">
+									<div class="lit_top">
+										<div class="top_title">
+											香港家族办公室协会会长单位蓝源资本应邀出席2016金砖论坛暨中国财富管理峰会
+										</div>
+										<div class="top_time">
+											<div class="push_time">
+												2016/11/18
+											</div>
+											<div class="look_num">
+												浏览次数：<i>36</i>
+											</div>
+										</div>
+										<div class="top_txt">中国金融、地产、财富管理领域年度盛会——2016金砖论坛暨第五届金砖价值榜颁奖典礼，武军先生就家族财...</div>
+										<div class="top_btn"><b>了解详情</b>
+
+										</div>
+									</div>
+									<div class="lit_bot"><img src="img/010101.jpg/" style="display: block;"></div>
+								</li>
+								<li class="third">
+									<div class="lit_top">
+										<div class="top_title">
+											香港家族办公室协会会长单位蓝源资本应邀出席2016金砖论坛暨中国财富管理峰会
+										</div>
+										<div class="top_time">
+											<div class="push_time">
+												2016/11/18
+											</div>
+											<div class="look_num">
+												浏览次数：<i>36</i>
+											</div>
+										</div>
+										<div class="top_txt">中国金融、地产、财富管理领域年度盛会——2016金砖论坛暨第五届金砖价值榜颁奖典礼，武军先生就家族财...</div>
+										<div class="top_btn"><b>了解详情</b>
+
+										</div>
+									</div>
+									<div class="lit_bot"><img src="img/010101.jpg/" style="display: block;"></div>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="office">
+				<div class="container clearfix">
+					<div class="box_title">
+						<p class="title_eg">Actity</p>
+						<p class="title_cn">办事处</p>
+					</div>
+					<div class="lit_box clearfix">
+						<ul class="clearfix">
+							<li class="first">
+
+								<div class="lit_top">
+									<div class="top_title">
+										香港家族办公室协会会长单位蓝源资本应邀出席2016金砖论坛暨中国财富管理峰会
+									</div>
+									<div class="top_time">
+										<div class="push_time">
+											2016/11/18
+										</div>
+										<div class="look_num">
+											浏览次数：<i>36</i>
+										</div>
+									</div>
+									<div class="top_txt">中国金融、地产、财富管理领域年度盛会——2016金砖论坛暨第五届金砖价值榜颁奖典礼，武军先生就家族财...</div>
+									<div class="top_btn"><b>了解详情</b>
+
+									</div>
+								</div>
+								<div class="lit_bot"><img src="img/010101.jpg/" style="display: block;"></div>
+							</li>
+							<li class="second">
+								<div class="lit_top">
+									<div class="top_title">
+										香港家族办公室协会会长单位蓝源资本应邀出席2016金砖论坛暨中国财富管理峰会
+									</div>
+									<div class="top_time">
+										<div class="push_time">
+											2016/11/18
+										</div>
+										<div class="look_num">
+											浏览次数：<i>36</i>
+										</div>
+									</div>
+									<div class="top_txt">中国金融、地产、财富管理领域年度盛会——2016金砖论坛暨第五届金砖价值榜颁奖典礼，武军先生就家族财...</div>
+									<div class="top_btn"><b>了解详情</b>
+
+									</div>
+								</div>
+								<div class="lit_bot"><img src="img/010101.jpg/" style="display: block;"></div>
+							</li>
+							<li class="third">
+								<div class="lit_top">
+									<div class="top_title">
+										香港家族办公室协会会长单位蓝源资本应邀出席2016金砖论坛暨中国财富管理峰会
+									</div>
+									<div class="top_time">
+										<div class="push_time">
+											2016/11/18
+										</div>
+										<div class="look_num">
+											浏览次数：<i>36</i>
+										</div>
+									</div>
+									<div class="top_txt">中国金融、地产、财富管理领域年度盛会——2016金砖论坛暨第五届金砖价值榜颁奖典礼，武军先生就家族财...</div>
+									<div class="top_btn"><b>了解详情</b>
+
+									</div>
+								</div>
+								<div class="lit_bot"><img src="img/010101.jpg/" style="display: block;"></div>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<footer class="sec-footer" style="background: #F0F0F0;">
+				<div class="container clearfix">
+					<div class="row">
+						<div class="col-md-4 col-sm-4 col-xs-12 footer-left">
+							<div class="col-md-6 col-sm-6 col-xs-6">
+								<h4>
+                            <a href="" title="">粮油油脂</a>
+                        </h4>
+								<ul>
+
+									<li>
+										<a href="" title="">粮食基地</a>
+									</li>
+
+									<li>
+										<a href="" title="">油脂产业</a>
+									</li>
+
+									<li>
+										<a href="" title="">农业机械</a>
+									</li>
+
+								</ul>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-6">
+								<h4>
+                            <a href="" title="">粮油油脂</a>
+                        </h4>
+								<ul>
+
+									<li>
+										<a href="" title="">粮食基地</a>
+									</li>
+
+									<li>
+										<a href="" title="">油脂产业</a>
+									</li>
+
+									<li>
+										<a href="" title="">农业机械</a>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-8 col-sm-8 col-xs-12 footer-right">
+							<div class="col-md-6 col-sm-6 col-xs-6 footer-right-left">
+								<em>电话:0755-1234567</em>
+								<p>企业管理有限公司</p>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-6 footer-right-right">
+								<img src="images/ewm.png" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="content">
+					<div class="sec-footer-end">
+						<p>Copyright © 2016 112233（深圳）有限公司 版权所有 粤ICP备 05116968号.
+							<a href="">
+								<img src="images/end.png" alt="" title="">
+							</a>
+						</p>
+					</div>
+
+				</div>
+			</footer>
+		</div>
+		
+	</body>
+
+</html>

@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人</title>
+    <link rel="stylesheet" type="text/css" href="lib/style/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="lib/style/style.css">
+    <link rel="stylesheet" href="lib/style/mdeia.css" />
+    <script type="text/javascript" src="lib/js/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="lib/js/style.js"></script>
+    <!-- <script type="text/javascript" src="lib/js/test.js"></script> -->
+
+</head>
+
+<body style="overflow: auto !important;">
+    <header>
+        <div class="navTop">
+            <div class="topNav">
+                <div class="container clearfix">
+                    <p class="wechat">
+                        <em>wechat</em>
+                    </p>
+                    <ul class="pull-left">
+                        <li class="pull-left">
+                            <a href="javascript:void (0)">微信</a>
+                            <span>|</span>
+                        </li>
+                        <li class="pull-left">
+                            <a href="javascript:void (0)">微博</a>
+                            <span>|</span>
+                        </li>
+                        <li class="pull-left">
+                            <a href="javascript:void (0)">掘金</a>
+                            <span>|</span>
+                        </li>
+                        <li class="pull-left">
+                            <a href="javascript:void (0)">知乎</a>
+                            <span>|</span>
+                        </li>
+                        <li class="pull-left">
+                            <a href="javascript:void (0)">QQ</a>
+                            <span class="last-bar">|</span>
+                        </li>
+                    </ul>
+                    <ul class="pull-right">
+                        <li class="pull-left">
+                            <a href="javascript:void (0)">登录</a>
+                            <span>|</span>
+                        </li>
+                        <li class="pull-left">
+                            <a href="Individual-initiation.html">个人入会</a>
+                            <span>|</span>
+                        </li>
+                        <li class="pull-left">
+                            <a href="group.html">团体入会</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subTop">
+                <div class="container clearfix">
+                    <a href="index.html" class="pull-left subImg" title="">
+                        <img src="images/logo.png" alt="" title="" />
+                    </a>
+                    <div class="navbar-collapse collapse" role="navigation" aria-expanded="false" style="height: 1px;border-color: #101010;">
+                        <ul class="pull-right pull-sub-right nav navbar-nav">
+                            <li class="pull-left">
+                                <a href="">首页</a>
+                            </li>
+                            <li class="pull-left">
+                                <a href="">集团概况</a>
+                            </li>
+                            <li class="pull-left">
+                                <a href="">资讯动态</a>
+                            </li>
+                            <li class="pull-left">
+                                <a href="">业务概览</a>
+                            </li>
+                            <li class="pull-left">
+                                <a href="">人力资源</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </header>
+    <section class="new-section video-section">
+        <div class="container clearfix panel panel-default  border-width">
+
+            <form role="form" id="baseForm" action="login.html">
+                <caption>
+                    <h2>个人入会申请</h2>
+                </caption>
+                <div class="form-group res-group sec-res">
+                    <label id="name">
+                        <em>*</em>姓名：</label>
+                    <input type="text" id="xingming" class="form-control" value="" />
+                    <span class="tip1"></span>
+                </div>
+                <div class="form-group res-group sec-res">
+                    <label id="sex">
+                        <em>*</em>性别：</label>
+                    <!-- <input type="text" id="xingbie" class="form-control" value="" /> -->
+                    <select class="form-control">
+                        <option value="">请选择</option>
+                        <option value="">男</option>
+                        <option value="">女</option>
+
+                    </select>
+                    <span class="tip2"></span>
+                </div>
+                <div class="form-group res-group sec-res">
+                    <label>
+                        <em>*</em>身份证号码：</label>
+                    <input type="text" id="shenfen" class="form-control" value="" />
+                    <span class="tip3"></span>
+                </div>
+                <div class="form-group res-group sec-res">
+                    <label>
+                        <em>*</em>手持身份证上传拍照：</label>
+                    <!-- <a href="javascript:;" class="file">选择文件 -->
+                    <input type="file" class="form-control" value="" />
+                    <span class="tip4"></span>
+                    <!-- </a> -->
+
+                </div>
+                <div class="form-group res-group sec-res res-textarea fo-years">
+                    <label>最近三年工作情况：</label>
+                    <input type="text" class="form-control" value="" placeholder="第一年" />
+                </div>
+                <div class="form-group res-group sec-res res-textarea fo-years">
+                    <!-- <label>最近三年工作情况：</label> -->
+                    <input type="text" class="form-control" value="" placeholder="第二年" />
+                </div>
+                <div class="form-group res-group sec-res res-textarea fo-years">
+                    <!-- <label>最近三年工作情况：</label> -->
+                    <input type="text" class="form-control" value="" placeholder="第三年" />
+                </div>
+                <div class="form-group res-group sec-res">
+                    <label>
+                        <em>*</em>手机号：</label>
+                    <input type="text" class="form-control" id="myPhone" value="" />
+                    <span class="tip"></span>
+                </div>
+                <div class="form-group res-group sec-res">
+                    <label>
+                        <em>*</em>图形教研码：</label>
+                    <input type="text" class="form-control" id="imgcaptcha" class="refcaptcha" value="" placeholder="验证码" />
+                    <input type="button" id="getImgcaptcha" value="" style="background:white;color:black;">
+                    <span class="tip-img"></span>
+                </div>
+                <div class="form-group res-group sec-res">
+                    <label>
+                        <em>*</em>入会密码：</label>
+                    <input type="password" class="form-control" id="password" value="" />
+                    <span class="tip-pass"></span>
+                </div>
+                <div class="form-group res-group sec-res">
+                    <label>
+                        <em>*</em>再次输入密码：</label>
+                    <input type="password" class="form-control" id="passwords" value="" />
+                    <span class="tip-password"></span>
+                </div>
+                <div class="form-group res-group sec-res fo-hr fo-wid">
+                    <label>
+                        <em>*</em>短信验证码：</label>
+                    <input type="text" class="form-control" id="mbcaptcha" value="" placeholder="验证码" />
+                    <input type="button" id="getMbcaptcha" value="获取验证码">
+                    <span class="tips"></span>
+                </div>
+                <div class="fo-none"></div>
+                <!-- <button type="button" id="come" class="btn btn-lgs btn-danger btn-submit">确认申请</button> -->
+                <button type="button" id="group" class="btn btn-lgs btn-danger btn-submit">团体入会</button>
+            </form>
+        </div>
+
+    </section>
+    <footer class="sec-footer" style="background: #F0F0F0;">
+        <div class="container clearfix">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12 footer-left">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <h4>
+                            <a href="" title="">粮油油脂</a>
+                        </h4>
+                        <ul>
+
+                            <li>
+                                <a href="" title="">粮食基地</a>
+                            </li>
+
+                            <li>
+                                <a href="" title="">油脂产业</a>
+                            </li>
+
+                            <li>
+                                <a href="" title="">农业机械</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <h4>
+                            <a href="" title="">粮油油脂</a>
+                        </h4>
+                        <ul>
+
+                            <li>
+                                <a href="" title="">粮食基地</a>
+                            </li>
+
+                            <li>
+                                <a href="" title="">油脂产业</a>
+                            </li>
+
+                            <li>
+                                <a href="" title="">农业机械</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-8 col-xs-12 footer-right">
+                    <div class="col-md-6 col-sm-6 col-xs-6 footer-right-left">
+                        <em>电话:0755-1234567</em>
+                        <p>企业管理有限公司</p>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6 footer-right-right">
+                        <img src="images/ewm.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="sec-footer-end">
+                <p>Copyright © 2016 112233（深圳）有限公司 版权所有 粤ICP备 05116968号.
+                    <a href="">
+                        <img src="images/end.png" alt="" title="">
+                    </a>
+                </p>
+            </div>
+
+        </div>
+    </footer>
+    <!-- <div class="modal fade" id="myModals">
+    <div class="modal-dialog modal-sm">
+      <div class="succ">成功</div>
+    </div>
+  </div> -->
+    <!-- <div role="dialog" class="modal fade" id="myModals" style="overflow: auto !important;">
+        <div class="modal-dialog" style="margin-top:10%;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                    <h4 class="modal-title">温馨提示</h4>
+                </div>
+                <div class="modal-body text-center">
+                    <h4 class="modal-title" id="myInfo"></h4>
+                </div>
+            </div>
+
+        </div>
+    </div> -->
+</body>
+<script>
+	
+	$(function () {
+		var flag = false;
+		var file = document.getElementById('file'); 
+		//姓名
+		// $("#xingming")
+		$("#application").click(function () {
+		  if ($("#xingming").val() == "") {
+			$(".tip1").html("姓名不能为空");
+			flag = false;
+		  } else if ($("#xingbie").val() == "") {
+			$(".tip2").html("姓别不能为空");
+			flag = false;
+		  } else if ($("#shenfen").val() == "") {
+			$(".tip3").html("请填写身份信息");
+			flag = false;
+		  } else if (file.value == "") {
+			$(".tip4").html("请上传手持身份证照");
+			flag = false;
+		  } else if ($("#myPhone").val() == "") {
+			$(".tip").html("手机号不能为空");
+			flag = false;
+		  } else if ($("#imgcaptcha").val() == "") {
+			$(".tip-img").html("图像验证码不能为空");
+			flag = false;
+		  }else if ($("#password").val() == "") {
+			$(".tip-pass").html("密码不能为空");
+			flag = false;
+		  } else if ($("#passwords").val() == "") {
+			$(".tip-password").html("二次密码不能为空");
+			flag = false;
+		  }else if ($("#mbcaptcha").val() == "") {
+			$(".tips").html("验证码不能为空");
+			flag = false;
+		  }else if ($("#password").val() != $("#passwords").val()){
+			flag = false;
+		  } else {
+			dopersonal();
+			//$("#application").attr("type", "submit");
+			//console.log(11)
+		  }
+		});
+		
+		// 不为空的时候
+		$("#xingming").blur(function () {
+		  if ($("#xingming").val() != "") {
+			$(".tip1").html("");
+		  }
+		});
+		$("#xingbie").blur(function () {
+		  if ($("#xingbie").val() != "") {
+			$(".tip2").html("");
+		  }
+		});
+		$("#shenfen").blur(function () {
+		  var reg = /^[1-8][0-7]{2}\d{3}([12]\d{3})(0[1-9]|1[012])(0[1-9]|[12]\d|3[01])\d{3}([0-9X])$/;
+		  var shenfen = this.value.replace(/ /g, "");
+		  var istrue = reg.test(shenfen);
+		  if (!istrue) {
+			$(".tip3").html("请输入正确的身份证号");
+		  } else if ($("#shenfen").val() != "") {
+			$(".tip3").html("");
+		  } else {
+			$(".tip3").html("");
+		  }
+		});
+		$("#mbcaptcha").blur(function () {
+		  if ($("#mbcaptcha").val() != "") {
+			$(".tips").html("");
+		  }
+		});
+		$("#file").blur(function () {
+		  if (file.value != "") {
+			$(".tip4").html("");
+		  }
+		});
+		$("#imgcaptcha").blur(function () {
+		  if ($("#imgcaptcha").val() != "") {
+			$(".tip-img").html("");
+		  }
+		});
+		// 手机号验证
+		$("#myPhone").blur(function () {
+		  var reg = /^1[34578]\d{9}$/;
+		  var telephone = this.value.replace(/ /g, "");
+		  var istrue = reg.test(telephone);
+		  if (!istrue) {
+			$(".tip").html("请输入正确格式的手机号码");
+			flag = false;
+		  } else {
+			console.log("手机号码格式输入正确");
+			$(".tip").html("");
+			flag = true;
+		  }
+		});
+		// 身份证验证
+		$("#shenfen").focus(function () {
+
+		})
+		// 获取验证码
+		var wait = 60;
+
+		function time(o) {
+		  if (wait == 0) {
+			o.removeAttribute("disabled");
+			o.value = "获取验证码";
+			wait = 60;
+		  } else {
+			o.setAttribute("disabled", true);
+			o.value = "重新发送(" + wait + ")";
+			wait--;
+			setTimeout(function () {
+				time(o)
+			  },
+			  1000)
+		  }
+		}
+		$("#getMbcaptcha").click(function () {
+			var reg = /^1[34578]\d{9}$/;
+			var mobileNo = $("#myPhone").val();	
+			var telephone = mobileNo.replace(/ /g, "");
+			var istrue = reg.test(telephone);
+			
+			if (mobileNo == "") {
+				$(".tip").html("手机号不能为空");
+				return false;
+			}else if(!istrue) {
+				$(".tip").html("请输入正确格式的手机号码");
+				flag = false;
+			} else {
+				get_captcha(mobileNo);
+				time(this);
+			}
+
+
+		});
+		// 密码验证
+		$("#password").blur(function () {
+			var reg = /^[A-Za-z0-9.*]{6,16}$/;
+			var pass = $("#password").val();
+			var istrue = reg.test(pass);
+			if (!istrue) {
+				$(".tip-pass").html("请输入6-16位字母、数字或符号");
+				flag = false;
+			} else {
+				$(".tip-pass").html("");
+				flag = true;
+			}
+		});
+		// 再次输入密码
+		$("#passwords").blur(function () {
+		  if ($("#password").val() != $("#passwords").val()) {
+			$(".tip-password").html("两次密码不匹配，请重新输入");
+			flag = false;
+		  } else {
+			$(".tip-password").html("");
+			flag = true;
+		  }
+		});
+	})
+  
+	
+	//获取短信验证码
+	function get_captcha(mobileNo){
+		var url = '/index.php/index/Apply/get_captcha/mobileNo/'+ mobileNo;
+		//alert("发送中!");
+		$.ajax({
+			type : "GET",
+			contentType: "application/json; charset=utf-8",
+			dataType: "json",
+			url  : url,
+			error: function(request) {
+				//alert("服务器繁忙，请联系我们!");
+				succModal();
+				$("#myInfo").html("服务器繁忙，请联系我们!");
+				return false;
+			},
+			success: function(data) {
+				//alert(data);
+				if(data == 1){
+					succModal();
+					$("#myInfo").html("发送成功");
+					
+				}else if(data == 3){
+					succModal();
+					$("#myInfo").html("每天发送验证不超过5次");
+					return false;
+				}else{
+					succModal();
+					$("#myInfo").html("发送失败");
+					return false;
+				}
+			}
+		});
+	}
+
+	//ajax提交申请	
+	
+	function dopersonal(){
+        var data = new FormData($('#baseForm')[0]);  
+        $.ajax({  
+            url: '/index.php/index/apply/personalApply',
+            type: 'POST',  
+            data: data,  
+            dataType: 'JSON',  
+            cache: false,  
+            processData: false,  
+            contentType: false  
+        }).done(function(data){  
+            if(data.code == 1){
+              modal();
+              succModal();
+              $("#myInfo").html(data.msg);
+              //window.location.href = '/';
+              window.setTimeout("window.location='/'",3000);
+            }else{
+              modal();
+              succModal();
+              $("#myInfo").html(data.msg);
+              return false;
+            }  
+        });  
+        return false;  
+    }
+	
+
+	
+	$('.refcaptcha').on('click', function(){
+		$('#getImgcaptcha').get(0).src=($('#getImgcaptcha').get(0).src+'?=r'+Math.random(1, 10000));
+	});	
+
+</script>
+
+</html>
